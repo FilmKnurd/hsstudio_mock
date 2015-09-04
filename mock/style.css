@@ -1,0 +1,210 @@
+/* Hannah's Studio */
+/* @group Typography */
+body {
+	font: 10px/1.8em Futura, "New Gothic Std", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+	letter-spacing: 0.08em;
+	word-spacing: -0.05em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+}
+
+h1 { 
+	font-size: 2.4em; 		/* 24px */
+	line-height: 1.5em; 	/* 36px */
+	margin-top: 0.75em;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	font-size: 2.2em;		/* 22px */
+	line-height: 1.6364em;	/* 36px */
+	margin-top: 0.8182em;
+	margin-bottom: 0.545em;
+}
+
+h3 {
+	font-size: 2em;			/* 20px */
+	line-height: 1.8em;		/* 36px */
+	margin-top: 0.9em;
+	margin-bottom: 0.6em;
+}
+
+h4 {
+	font-size: 1.8em;		/* 18px */
+	line-height: 1em; 		/* 18px */ 
+	margin-top: 0.5em;
+	margin-bottom: 0.5em; 
+}
+
+h5 {
+	font-size: 1.6em; 		/* 16px */ 
+	line-height: 1.125em; 	/* 18px */ 
+	margin-top: 1.125em; 
+	margin-bottom: 0.375em;
+}
+
+h6 {
+	font-size: 1.4em; 		/* 14px */ 
+	line-height: 1.2857em; 	/* 18px */ 
+	margin-top: 0.6428em; 
+	margin-bottom: 0.4285em;
+}
+
+p {
+	color: #555;
+	font-size: 1.2em; 		/* 12px */ 
+	font-weight: normal;
+	line-height: 1.5em; 	/* 18px */ 
+	margin-top: 0em;
+	margin-bottom: 1.5em;
+	letter-spacing: 0.17em;
+}
+
+
+p:first-letter {
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+div:first-child {
+	margin-top: 0px;
+}
+
+/* @end */
+
+
+#page { margin-top: 30px; }
+
+#info, #navigation {
+	margin-top: 80px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+#info { border-right: 1px solid #dcdcdc; }
+
+#logo {
+	position: relative;
+	right: 5px;
+}
+
+#content-middle {
+	border-top: 4px dashed #e1e1e1;
+	border-bottom: 4px dashed #e1e1e1;
+	padding: 2em 0 2em 0;
+}
+
+/* @group Contact Info */
+#contact-info {
+	margin-top: 30px;
+	float: left;
+	width: 160px;
+}
+#contact-info .org {
+	display: none;
+}
+
+#contact-info .tel {
+	font-size: 2em;
+	position: relative;
+	top: -60px;
+}
+/* @end */
+
+/* @group Permalinks */
+#permalinks { float: right; width: 120px; }
+	#permalinks ul li { float: left; margin-right: 10px; margin-top: -46px; }
+
+	#permalinks ul li a {
+		display: block;
+		text-indent: -9000px;
+		width: 48px;
+		height: 48px;
+	}
+	
+	#permalinks #plink-mail { background: url(images/perma-links.jpg) 0px 48px; }
+	#permalinks #plink-rss { background: url(images/perma-links.jpg) 48px 48px; }
+	#permalinks #plink-mail:hover { background: url(images/perma-links.jpg) 0px 0px; }
+	#permalinks #plink-rss:hover { background: url(images/perma-links.jpg) 48px 0px; }
+
+
+/* @end */
+
+
+
+/* @group Navigation */
+a:hover { text-decoration: underline; }
+
+#navigation ul li a {
+	color: #aaa;
+	display: block;
+	font-size: 1.4em;
+	line-height: 2.57em;
+	margin-left: -1em;
+	padding: 0.125em;
+	padding-left: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#navigation ul li a:hover {
+	background-color: #eee;
+	color: black;
+}
+
+/* @end */
+
+/* @group Announcements */
+#announcements {
+	background-color: #eee;
+	padding: 0.8em;
+	margin-top: -0.8em;
+}
+	#announcements h6 { text-align: center; }
+
+	#announcements p {
+		font-size: 1em;
+		line-height: 1.8em;
+		letter-spacing: normal;
+	}
+/* @end */
+
+/* @group Lessons */
+#lessons ul li {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	list-style: circle;
+}
+
+
+/* @end */
+
+
+
+/* @group Meet the Teachers */
+#content-footer p {
+	letter-spacing: normal;
+}
+#content-footer .teacher-thumb {
+	background-color: #eee;
+	float: left;
+	height: 100px;
+	width: 100px;
+	margin: 0 10px 5px 0px;
+}
+
+#content-footer h3 {
+	font-size: 1.2em;
+	text-transform: none;
+}
+
+.pullup {
+	margin-top: -20px;
+}
+/* @end */
