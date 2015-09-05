@@ -1,2 +1,27 @@
+@import "./bower_components/modular-scale/stylesheets/modular-scale";
 @import "bourbon";
 @import "neat";
+
+$ms-base: 1em;
+$ms-ratio: $golden;
+
+body {
+	font-family: "minion-pro";
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "din-condensed-web"
+}
+
+h1 {
+	font-size: ms(3);
+}
+
+h2 {
+	font-size: ms(2);
+}
+
+h3 {
+	font-size: ms(1);
+}

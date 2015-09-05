@@ -3,8 +3,19 @@
 	"file": "style.css",
 	"sources": [
 		"../style.scss",
+		"../bower_components/modular-scale/stylesheets/_modular-scale.scss",
 		"../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/_bourbon.scss",
 		"../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/_neat.scss",
+		"../bower_components/modular-scale/stylesheets/modular-scale/_ratios.scss",
+		"../bower_components/modular-scale/stylesheets/modular-scale/_tests.scss",
+		"../bower_components/modular-scale/stylesheets/modular-scale/_pow.scss",
+		"../bower_components/modular-scale/stylesheets/modular-scale/_calc.scss",
+		"../bower_components/modular-scale/stylesheets/modular-scale/_generate-list.scss",
+		"../bower_components/modular-scale/stylesheets/modular-scale/_sort-list.scss",
+		"../bower_components/modular-scale/stylesheets/modular-scale/_round-px.scss",
+		"../bower_components/modular-scale/stylesheets/modular-scale/_function.scss",
+		"../bower_components/modular-scale/stylesheets/modular-scale/_function-list.scss",
+		"../bower_components/modular-scale/stylesheets/modular-scale/_respond.scss",
 		"../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/settings/_prefixer.scss",
 		"../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/settings/_px-to-em.scss",
 		"../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/settings/_asset-pipeline.scss",
@@ -104,6 +115,6 @@
 		"../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/settings/_disable-warnings.scss"
 	],
 	"sourcesContent": [],
-	"mappings": "AkFGE,IAAI,CAAC;EACH,UAAU,EAAE,UAAW,GADnB;;AAOH,CAAC;AACN,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAFK;EACR,UAAU,EAAE,OAAQ,GADX",
+	"mappings": "A6FGE,IAAI,CAAC;EACH,UAAU,EAAE,UAAW,GADnB;;AAOH,CAAC;AACN,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAFK;EACR,UAAU,EAAE,OAAQ,GADX;;A7FHf,IAAI,CAAC;EACJ,WAAW,EAAE,YAAa;EAC1B,SAAS,EAAE,IAAK,GAFX;;AAKc,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAnB;EACtB,WAAW,EAAE,mBACb,GAFuB;;AAIxB,EAAE,CAAC;EACF,SAAS,EOHE,aAAM,GPEd;;AAIJ,EAAE,CAAC;EACF,SAAS,EOPE,UAAM,GPMd;;AAIJ,EAAE,CAAC;EACF,SAAS,EOXE,OAAM,GPUd",
 	"names": []
 }

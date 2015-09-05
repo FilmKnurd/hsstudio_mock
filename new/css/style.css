@@ -6,4 +6,20 @@ html {
 *::before {
   box-sizing: inherit; }
 
+body {
+  font-family: "minion-pro";
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "din-condensed-web"; }
+
+h1 {
+  font-size: 4.235801032em; }
+
+h2 {
+  font-size: 2.617924em; }
+
+h3 {
+  font-size: 1.618em; }
+
 /*# sourceMappingURL=style.css.map */
