@@ -10,8 +10,12 @@ body {
   font-family: "minion-pro";
   font-size: 16px; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, nav {
   font-family: "din-condensed-web"; }
+
+h1, h2, h3, h4, h5, h6,
+.primary p:first-of-type {
+  text-rendering: optimizeLegibility; }
 
 h1 {
   font-size: 4.235801032em; }
@@ -21,5 +25,29 @@ h2 {
 
 h3 {
   font-size: 1.618em; }
+
+.container {
+  width: 100%; }
+
+article {
+  max-width: 40em; }
+
+.primary > p:first-of-type {
+  font-size: 1.2em; }
+  .primary > p:first-of-type:first-letter {
+    float: left;
+    font-size: 4.235801032em;
+    line-height: 1em;
+    padding-right: 8px; }
+
+.endorsement, .pull-quote {
+  font-size: 1.618em;
+  max-width: 25em; }
+
+a {
+  text-decoration: none; }
+
+#logo, #logo > img {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

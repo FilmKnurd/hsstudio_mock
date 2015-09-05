@@ -10,8 +10,13 @@ body {
 	font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, nav {
 	font-family: "din-condensed-web"
+}
+
+h1, h2, h3, h4, h5, h6, 
+.primary p:first-of-type {
+	text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -24,4 +29,36 @@ h2 {
 
 h3 {
 	font-size: ms(1);
+}
+
+.container {
+	width: 100%;
+}
+
+article {
+	max-width: 40em;
+}
+
+.primary > p:first-of-type {
+	font-size: 1.2em;
+
+	&:first-letter {
+		float: left; 
+		font-size: ms(3); 
+		line-height: 1em; 
+		padding-right: 8px; 
+	}
+}
+
+.endorsement, .pull-quote {
+	font-size: ms(1);
+	max-width: 25em;
+}
+
+a {
+	text-decoration: none;
+}
+
+#logo, #logo > img {
+	width: 100%;
 }
