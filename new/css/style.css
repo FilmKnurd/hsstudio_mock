@@ -9,6 +9,15 @@ html {
 body {
   font-family: "minion-pro";
   font-size: 16px; }
+  @media screen and (min-width: 320px) {
+    body {
+      font-size: 14px; } }
+  @media screen and (min-width: 768px) {
+    body {
+      font-size: 16px; } }
+  @media screen and (min-width: 1024px) {
+    body {
+      font-size: 18px; } }
 
 h1, h2, h3, h4, h5, h6, nav {
   font-family: "din-condensed-web"; }
@@ -32,13 +41,14 @@ h3 {
 article {
   max-width: 40em; }
 
-.primary > p:first-of-type {
-  font-size: 1.2em; }
-  .primary > p:first-of-type:first-letter {
-    float: left;
-    font-size: 4.235801032em;
-    line-height: 1em;
-    padding-right: 8px; }
+@media screen and (min-width: 1024px) {
+  .primary > p:first-of-type {
+    font-size: 1.2em; }
+    .primary > p:first-of-type:first-letter {
+      float: left;
+      font-size: 4.235801032em;
+      line-height: 1em;
+      padding-right: 8px; } }
 
 .endorsement, .pull-quote {
   font-size: 1.618em;

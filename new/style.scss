@@ -1,6 +1,11 @@
+@import "./bower_components/breakpoint-sass/stylesheets/_breakpoint";
 @import "./bower_components/modular-scale/stylesheets/modular-scale";
 @import "bourbon";
 @import "neat";
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
 
 $ms-base: 1em;
 $ms-ratio: $golden;
@@ -8,6 +13,18 @@ $ms-ratio: $golden;
 body {
 	font-family: "minion-pro";
 	font-size: 16px;
+
+	@include breakpoint($mobile) {
+		font-size: 14px;
+	}
+
+	@include breakpoint($tablet) {
+		font-size: 16px;
+	}
+
+	@include breakpoint($desktop) {
+		font-size: 18px;
+	}
 }
 
 h1, h2, h3, h4, h5, h6, nav {
@@ -40,13 +57,15 @@ article {
 }
 
 .primary > p:first-of-type {
-	font-size: 1.2em;
+	@include breakpoint($desktop) {
+		font-size: 1.2em;
 
-	&:first-letter {
-		float: left; 
-		font-size: ms(3); 
-		line-height: 1em; 
-		padding-right: 8px; 
+		&:first-letter {
+			float: left; 
+			font-size: ms(3); 
+			line-height: 1em; 
+			padding-right: 8px; 
+		}
 	}
 }
 
