@@ -1,5 +1,13 @@
 # Design Flow
 
+1. Markup content
+2. Setup typography
+3. Sketch layouts for various breakpoints
+4. Use breakpoint plugin to name the primay breakpoints
+5. Style mobile
+6. Style tablet
+7. Style desktop
+
 ## Content
 
 ## Typography
