@@ -2658,6 +2658,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/spikes\/css\/styles.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/spikes\/css\/styles.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/style.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
