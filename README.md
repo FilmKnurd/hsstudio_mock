@@ -22,6 +22,14 @@
 1. Modular Scale plugin
 2. Golden Ratio
 
+### Baseline
+
+1. Install [baseliner](http://keyes.ie/things/baseliner/) 
+
+### Reset
+
+1. Install [marx](https://github.com/mblode/marx)
+
 ## Logo
 1. Export SVG
 2. Optimize SVG

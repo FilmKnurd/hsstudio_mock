@@ -1,3 +1,4 @@
+@import "./bower_components/marx/scss/marx";
 @import "./bower_components/breakpoint-sass/stylesheets/_breakpoint";
 @import "./bower_components/modular-scale/stylesheets/modular-scale";
 @import "bourbon";
@@ -12,11 +13,10 @@ $ms-ratio: $golden;
 
 body {
 	font-family: "minion-pro";
-	font-size: 16px;
+	// font-size: 16px;
 
-	@include breakpoint($mobile) {
-		font-size: 14px;
-	}
+	font-size: 14px;
+	line-height: 22px; /* 22px / 14px */
 
 	@include breakpoint($tablet) {
 		font-size: 16px;
@@ -28,7 +28,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, nav {
-	font-family: "din-condensed-web"
+	border-bottom: none;
+	font-family: "din-condensed-web";
+	margin-top: 0px;
 }
 
 h1, h2, h3, h4, h5, h6, 
@@ -37,23 +39,54 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1 {
-	font-size: ms(3);
+	font-size: ms(2);
+	line-height: (44px / 36.289px) * 1em;
+	margin-bottom: (8px / 36.289px) * 1em;
+
+	@include breakpoint($tablet) {
+		font-size: ms(3);
+	}
 }
 
 h2 {
-	font-size: ms(2);
+	font-size: ms(1);
+	line-height: (33px / 22.54px) * 1em;
+	margin-bottom: (10px / 22.54px) * 1em;
+
+	@include breakpoint($tablet) {
+		font-size: ms(2);
+	}
 }
 
 h3 {
-	font-size: ms(1);
+	font-size: ms(0);
+	line-height: (22px / 14px) * 1em;
+	margin-bottom: (11px / 14px) * 1em;
+	margin-top: 0em;
+
+	@include breakpoint($tablet) {
+		font-size: ms(1);
+	}
 }
 
 .container {
+	padding: 0.5em;
 	width: 100%;
+}
+
+.page-wrap {
+	margin: auto;
+	overflow: hidden;
+	max-width: 40em;
 }
 
 article {
 	max-width: 40em;
+}
+
+p {
+	margin-bottom: (11px / 14px) * 1em;
+	margin-top: 0em;
 }
 
 .primary > p:first-of-type {
@@ -72,6 +105,14 @@ article {
 .endorsement, .pull-quote {
 	font-size: ms(1);
 	max-width: 25em;
+
+	footer {
+		border-top: none;
+	}
+
+	
+	line-height: (33px / 22.54px) * 1em;
+	margin-bottom: (11px / 22.54px) * 1em;
 }
 
 a {
@@ -80,4 +121,39 @@ a {
 
 #logo, #logo > img {
 	width: 100%;
+}
+
+#info {
+	background-color: #EEE;
+	overflow: hidden;
+
+	#logo {
+		float: left;
+		width: 45%;
+	}
+
+	nav {
+		ul {
+			overflow: hidden;
+			padding-top: 0em;
+			width: 50%;
+			li {
+				clear: left;
+				display: block;
+				float: left;
+				font-size: ms(1);
+				line-height: (33px / 22.54px) * 1em;
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		a {
+			padding: 0em;
+		}
+	}
+}
+
+aside {
+	display: none;
 }
