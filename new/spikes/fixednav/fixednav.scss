@@ -1,0 +1,19 @@
+.container {
+	float: left;
+	margin-right: 20px;
+	min-height: 100px;
+	overflow: visible;
+	position: relative;
+	width: 45%;
+}
+
+#info {
+	margin-top: 100px;
+	position: fixed;
+	width: 45%;
+}
+
+nav {
+	float: right;
+	text-align: right;
+}
