@@ -10,6 +10,10 @@
 
 ## Content
 
+### Viewport
+
+1. Set the [viewport meta tag](https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/set-the-viewport?hl=en) so the content is maximized on mobile screens
+
 ## Typography
 
 ### Typeface

@@ -25,6 +25,7 @@ body {
 
 	@include breakpoint($desktop) {
 		font-size: 18px;
+		line-height: 26px;
 	}
 }
 
@@ -58,6 +59,10 @@ h2 {
 		line-height: (36px / 25.76px) * 1em;
 		margin-bottom: 0em;
 	}
+
+	@include breakpoint($desktop) {
+		margin-bottom: (8px / 28.98px) * 1em;
+	}
 }
 
 h3 {
@@ -69,6 +74,10 @@ h3 {
 	@include breakpoint($tablet) {
 		line-height: (24px / 16px) * 1em;
 		margin-bottom: 0em;
+	}
+
+	@include breakpoint($desktop) {
+		line-height: (26px / 18px) * 1em;
 	}
 }
 
@@ -99,8 +108,8 @@ p {
 		&:first-letter {
 			float: left; 
 			font-size: ms(3); 
-			line-height: 1em; 
-			padding-right: 8px; 
+			line-height: 0.9em; 
+			padding-right: 0.2em; 
 		}
 	}
 }
@@ -120,6 +129,11 @@ p {
 	@include breakpoint($tablet) {
 		line-height: (36px / 25.76px) * 1em;
 		margin-bottom: 0em;
+	}
+
+	@include breakpoint($desktop) {
+		line-height: ( 43px / 28.98px) * 1em;
+		margin-top: 0em;
 	}
 }
 
