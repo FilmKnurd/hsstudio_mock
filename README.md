@@ -29,6 +29,7 @@
 ### Baseline
 
 1. Install [baseliner](http://keyes.ie/things/baseliner/) 
+2. [Vertical Rythm](http://www.smashingmagazine.com/2012/12/css-baseline-the-good-the-bad-and-the-ugly/)
 
 ### Reset
 
