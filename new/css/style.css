@@ -539,24 +539,16 @@ tfoot td {
   font-style: italic;
   padding: 1.6rem 0.4rem; }
 
-html {
-  box-sizing: border-box; }
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit; }
-
 body {
   font-family: "minion-pro";
   font-size: 14px;
   line-height: 22px;
   /* 22px / 14px */ }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     body {
       font-size: 16px;
       line-height: 24px; } }
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     body {
       font-size: 18px;
       line-height: 26px; } }
@@ -574,7 +566,7 @@ h1 {
   font-size: 2.617924em;
   line-height: 1.2124886329em;
   margin-bottom: 0.2204524787em; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     h1 {
       line-height: 1.1573627561em; } }
 
@@ -582,11 +574,11 @@ h2 {
   font-size: 1.618em;
   line-height: 1.4640638864em;
   margin-bottom: 0.4436557232em; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     h2 {
       line-height: 1.397515528em;
       margin-bottom: 0em; } }
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     h2 {
       margin-bottom: 0.27605245em; } }
 
@@ -595,11 +587,11 @@ h3 {
   line-height: 1.5714285714em;
   margin-bottom: 0.7857142857em;
   margin-top: 0em; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     h3 {
       line-height: 1.5em;
       margin-bottom: 0em; } }
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     h3 {
       line-height: 1.4444444444em; } }
 
@@ -619,7 +611,7 @@ p {
   margin-bottom: 0.7857142857em;
   margin-top: 0em; }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .primary > p:first-of-type {
     font-size: 1.2em; }
     .primary > p:first-of-type:first-letter {
@@ -635,11 +627,11 @@ p {
   margin-bottom: 0.4880212955em; }
   .endorsement footer, .pull-quote footer {
     border-top: none; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .endorsement, .pull-quote {
       line-height: 1.397515528em;
       margin-bottom: 0em; } }
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     .endorsement, .pull-quote {
       line-height: 1.4837819186em;
       margin-top: 0em; } }

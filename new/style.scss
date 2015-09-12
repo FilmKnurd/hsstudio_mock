@@ -2,7 +2,7 @@
 @import "./bower_components/breakpoint-sass/stylesheets/_breakpoint";
 @import "./bower_components/modular-scale/stylesheets/modular-scale";
 @import "bourbon";
-@import "neat";
+@import "_susy";
 
 $mobile: 320px;
 $tablet: 768px;
