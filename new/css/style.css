@@ -563,7 +563,7 @@ h1, h2, h3, h4, h5, h6,
   text-rendering: optimizeLegibility; }
 
 h1 {
-  font-size: 2.617924em;
+  font-size: 2.6180340252em;
   line-height: 1.2124886329em;
   margin-bottom: 0.2204524787em; }
   @media (min-width: 768px) {
@@ -571,7 +571,7 @@ h1 {
       line-height: 1.1573627561em; } }
 
 h2 {
-  font-size: 1.618em;
+  font-size: 1.618034em;
   line-height: 1.4640638864em;
   margin-bottom: 0.4436557232em; }
   @media (min-width: 768px) {
@@ -603,9 +603,19 @@ h3 {
   margin: auto;
   overflow: hidden;
   max-width: 40em; }
+  @media (min-width: 768px) {
+    .page-wrap {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .page-wrap:after {
+        content: " ";
+        display: block;
+        clear: both; } }
 
 article {
-  max-width: 40em; }
+  max-width: 40em;
+  /* Sets a readable line length */ }
 
 p {
   margin-bottom: 0.7857142857em;
@@ -616,12 +626,12 @@ p {
     font-size: 1.2em; }
     .primary > p:first-of-type:first-letter {
       float: left;
-      font-size: 4.235801032em;
+      font-size: 4.2360680659em;
       line-height: 0.9em;
       padding-right: 0.2em; } }
 
 .endorsement, .pull-quote {
-  font-size: 1.618em;
+  font-size: 1.618034em;
   max-width: 25em;
   line-height: 1.4640638864em;
   margin-bottom: 0.4880212955em; }
@@ -656,12 +666,35 @@ a {
       clear: left;
       display: block;
       float: left;
-      font-size: 1.618em;
+      font-size: 1.618034em;
       line-height: 1.4640638864em;
       text-align: center;
       width: 100%; }
   #info nav a {
     padding: 0em; }
+  @media (min-width: 768px) {
+    #info {
+      width: 34.7487664188%;
+      float: left;
+      margin-right: 2.1474737647%;
+      background-color: white;
+      border-right: 1px solid #979797;
+      margin-top: 8em;
+      position: fixed; }
+      #info #logo {
+        width: 100%;
+        margin-bottom: -4px; }
+      #info nav ul {
+        width: 100%; }
+        #info nav ul li {
+          text-align: right;
+          line-height: 1.397515528em; } }
+
+@media (min-width: 768px) {
+  #content {
+    width: 63.1037598165%;
+    float: right;
+    margin-right: 0; } }
 
 aside {
   display: none; }

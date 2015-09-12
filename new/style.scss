@@ -1,12 +1,25 @@
 @import "./bower_components/marx/scss/marx";
 @import "./bower_components/breakpoint-sass/stylesheets/_breakpoint";
 @import "./bower_components/modular-scale/stylesheets/modular-scale";
-@import "bourbon";
 @import "_susy";
 
-$mobile: 320px;
-$tablet: 768px;
-$desktop: 1024px;
+$susy: (
+	columns: 1 1.816,
+	gutters: 0.0618,
+	container: 100%,
+	// debug: (
+	//     image: show,
+	//     color: rgba(orange,.1),
+	//     output: background
+	//   )
+);
+
+$susy-tablet: (
+	columns: 1 1.618
+);
+
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
 
 $ms-base: 1em;
 $ms-ratio: $golden;
@@ -18,12 +31,12 @@ body {
 	font-size: 14px;
 	line-height: 22px; /* 22px / 14px */
 
-	@include breakpoint($tablet) {
+	@include breakpoint($bp-tablet) {
 		font-size: 16px;
 		line-height: 24px;
 	}
 
-	@include breakpoint($desktop) {
+	@include breakpoint($bp-desktop) {
 		font-size: 18px;
 		line-height: 26px;
 	}
@@ -45,7 +58,7 @@ h1 {
 	line-height: (44px / 36.289px) * 1em;
 	margin-bottom: (8px / 36.289px) * 1em;
 
-	@include breakpoint($tablet) {
+	@include breakpoint($bp-tablet) {
 		line-height: ( 48px / 41.4736px) * 1em;
 	}
 }
@@ -55,12 +68,12 @@ h2 {
 	line-height: (33px / 22.54px) * 1em;
 	margin-bottom: (10px / 22.54px) * 1em;
 
-	@include breakpoint($tablet) {
+	@include breakpoint($bp-tablet) {
 		line-height: (36px / 25.76px) * 1em;
 		margin-bottom: 0em;
 	}
 
-	@include breakpoint($desktop) {
+	@include breakpoint($bp-desktop) {
 		margin-bottom: (8px / 28.98px) * 1em;
 	}
 }
@@ -71,12 +84,12 @@ h3 {
 	margin-bottom: (11px / 14px) * 1em;
 	margin-top: 0em;
 
-	@include breakpoint($tablet) {
+	@include breakpoint($bp-tablet) {
 		line-height: (24px / 16px) * 1em;
 		margin-bottom: 0em;
 	}
 
-	@include breakpoint($desktop) {
+	@include breakpoint($bp-desktop) {
 		line-height: (26px / 18px) * 1em;
 	}
 }
@@ -90,10 +103,14 @@ h3 {
 	margin: auto;
 	overflow: hidden;
 	max-width: 40em;
+
+	@include susy-breakpoint($bp-tablet, $susy) {
+		@include container;
+	}
 }
 
 article {
-	max-width: 40em;
+	max-width: 40em; /* Sets a readable line length */
 }
 
 p {
@@ -102,7 +119,7 @@ p {
 }
 
 .primary > p:first-of-type {
-	@include breakpoint($desktop) {
+	@include breakpoint($bp-desktop) {
 		font-size: 1.2em;
 
 		&:first-letter {
@@ -126,12 +143,12 @@ p {
 	line-height: (33px / 22.54px) * 1em;
 	margin-bottom: (11px / 22.54px) * 1em;
 
-	@include breakpoint($tablet) {
+	@include breakpoint($bp-tablet) {
 		line-height: (36px / 25.76px) * 1em;
 		margin-bottom: 0em;
 	}
 
-	@include breakpoint($desktop) {
+	@include breakpoint($bp-desktop) {
 		line-height: ( 43px / 28.98px) * 1em;
 		margin-top: 0em;
 	}
@@ -173,6 +190,35 @@ a {
 		a {
 			padding: 0em;
 		}
+	}
+
+	@include susy-breakpoint($bp-tablet, $susy) {
+		@include span(1);
+		background-color: white;
+		border-right: 1px solid #979797;
+		margin-top: 8em;
+		position: fixed;
+
+		#logo {
+			width: 100%;
+			margin-bottom: -4px;
+		}
+
+		nav {
+			ul {
+				width: 100%;
+				li {
+					text-align: right;
+					line-height: (36px / 25.76px) * 1em;
+				}
+			}
+		}
+	}
+}
+
+#content {
+	@include susy-breakpoint($bp-tablet, $susy) {
+		@include span(1 last);
 	}
 }
 
