@@ -4,7 +4,7 @@
 @import "_susy";
 
 $susy: (
-	columns: 1 1.816,
+	columns: 1 1.618,
 	gutters: 0.0618,
 	container: 100%,
 	// debug: (
@@ -14,8 +14,8 @@ $susy: (
 	//   )
 );
 
-$susy-tablet: (
-	columns: 1 1.618
+$susy-desktop: (
+	container: 1020px,
 );
 
 $bp-tablet: 768px;
@@ -105,6 +105,10 @@ h3 {
 	max-width: 40em;
 
 	@include susy-breakpoint($bp-tablet, $susy) {
+		@include container;
+	}
+
+	@include susy-breakpoint($bp-desktop, $susy-desktop) {
 		@include container;
 	}
 }
@@ -214,10 +218,46 @@ a {
 			}
 		}
 	}
+
+	@include susy-breakpoint($bp-desktop, $susy-desktop) {
+		background-color: white;
+		border: none;
+		margin-top: 12em;
+		overflow: visible;
+		padding: 0px;
+		position: fixed;
+		width: 380.625px;
+
+		#logo {
+			float: left;
+			margin-top: 1em;
+			position: relative;
+			left: -20px;
+			width: 65%;
+		}
+
+		nav {
+			// border: 1px solid green;
+			float: left;
+			// margin-left: 15px;
+			width: 35%;
+			ul {
+				width: 100%;
+				li {
+					line-height: (36px / 25.76px) * 1em;
+					text-align: left;
+				}
+			}
+		}
+	}
 }
 
 #content {
 	@include susy-breakpoint($bp-tablet, $susy) {
+		@include span(1 last);
+	}
+
+	@include susy-breakpoint($bp-desktop, $susy-desktop) {
 		@include span(1 last);
 	}
 }

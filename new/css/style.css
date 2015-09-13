@@ -612,6 +612,15 @@ h3 {
         content: " ";
         display: block;
         clear: both; } }
+  @media (min-width: 1024px) {
+    .page-wrap {
+      max-width: 1020px;
+      margin-left: auto;
+      margin-right: auto; }
+      .page-wrap:after {
+        content: " ";
+        display: block;
+        clear: both; } }
 
 article {
   max-width: 40em;
@@ -674,9 +683,9 @@ a {
     padding: 0em; }
   @media (min-width: 768px) {
     #info {
-      width: 34.7487664188%;
+      width: 37.3162176282%;
       float: left;
-      margin-right: 2.1474737647%;
+      margin-right: 2.3061422494%;
       background-color: white;
       border-right: 1px solid #979797;
       margin-top: 8em;
@@ -689,10 +698,39 @@ a {
         #info nav ul li {
           text-align: right;
           line-height: 1.397515528em; } }
+  @media (min-width: 1024px) {
+    #info {
+      background-color: white;
+      border: none;
+      margin-top: 12em;
+      overflow: visible;
+      padding: 0px;
+      position: fixed;
+      width: 380.625px; }
+      #info #logo {
+        float: left;
+        margin-top: 1em;
+        position: relative;
+        left: -20px;
+        width: 65%; }
+      #info nav {
+        float: left;
+        width: 35%; }
+        #info nav ul {
+          width: 100%; }
+          #info nav ul li {
+            line-height: 1.397515528em;
+            text-align: left; } }
 
 @media (min-width: 768px) {
   #content {
-    width: 63.1037598165%;
+    width: 60.3776401224%;
+    float: right;
+    margin-right: 0; } }
+
+@media (min-width: 1024px) {
+  #content {
+    width: 60.3776401224%;
     float: right;
     margin-right: 0; } }
 
