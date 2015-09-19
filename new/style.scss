@@ -24,6 +24,8 @@ $bp-desktop: 1024px;
 $ms-base: 1em;
 $ms-ratio: $golden;
 
+$body-text-color: #333;
+
 body {
 	font-family: "minion-pro";
 	// font-size: 16px;
@@ -40,6 +42,11 @@ body {
 		font-size: 18px;
 		line-height: 26px;
 	}
+}
+
+blockquote {
+	font-family: "minion-pro";
+	margin: 0em;
 }
 
 h1, h2, h3, h4, h5, h6, nav {
@@ -110,6 +117,7 @@ h3 {
 
 	@include susy-breakpoint($bp-desktop, $susy-desktop) {
 		@include container;
+		overflow: visible;
 	}
 }
 
@@ -118,6 +126,7 @@ article {
 }
 
 p {
+	color: $body-text-color;
 	margin-bottom: (11px / 14px) * 1em;
 	margin-top: 0em;
 }
@@ -136,6 +145,7 @@ p {
 }
 
 .endorsement, .pull-quote {
+	font-family: "minion-pro";
 	font-size: ms(1);
 	max-width: 25em;
 
@@ -143,7 +153,6 @@ p {
 		border-top: none;
 	}
 
-	
 	line-height: (33px / 22.54px) * 1em;
 	margin-bottom: (11px / 22.54px) * 1em;
 
@@ -153,17 +162,33 @@ p {
 	}
 
 	@include breakpoint($bp-desktop) {
-		line-height: ( 43px / 28.98px) * 1em;
+		// line-height: ( 43px / 28.98px) * 1em;
+		line-height: (39px / 25.76px) * 1em;
 		margin-top: 0em;
 	}
 }
 
+.endorsement {
+	@include breakpoint($bp-desktop) {
+		margin-top: (13px / 25.76px) * 1em;
+	}
+}
+
 a {
+	color: #7d85c0;
 	text-decoration: none;
 }
 
 #logo, #logo > img {
 	width: 100%;
+}
+
+#header {
+	@include susy-breakpoint($bp-tablet, $susy) {
+		@include span(2);
+		background-color: #EEE;
+		min-height: 20px;
+	}
 }
 
 #info {
@@ -192,6 +217,7 @@ a {
 		}
 
 		a {
+			color: #7d85c0;
 			padding: 0em;
 		}
 	}
@@ -252,6 +278,10 @@ a {
 	}
 }
 
+article {
+	margin-bottom: 0em;
+}
+
 #content {
 	@include susy-breakpoint($bp-tablet, $susy) {
 		@include span(1 last);
@@ -264,4 +294,18 @@ a {
 
 aside {
 	display: none;
+
+	@include breakpoint($bp-desktop) {
+		display: block;
+	}
+}
+
+.pull-quote {
+	background-color: #EEE;
+	float: right;
+	margin-left: -40px;
+	padding-left: 0.5em;
+	position: relative;
+	right: -1.6em;
+	width: 70%;
 }

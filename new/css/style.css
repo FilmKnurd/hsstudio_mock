@@ -553,6 +553,10 @@ body {
       font-size: 18px;
       line-height: 26px; } }
 
+blockquote {
+  font-family: "minion-pro";
+  margin: 0em; }
+
 h1, h2, h3, h4, h5, h6, nav {
   border-bottom: none;
   font-family: "din-condensed-web";
@@ -616,7 +620,8 @@ h3 {
     .page-wrap {
       max-width: 1020px;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      overflow: visible; }
       .page-wrap:after {
         content: " ";
         display: block;
@@ -627,6 +632,7 @@ article {
   /* Sets a readable line length */ }
 
 p {
+  color: #333;
   margin-bottom: 0.7857142857em;
   margin-top: 0em; }
 
@@ -640,6 +646,7 @@ p {
       padding-right: 0.2em; } }
 
 .endorsement, .pull-quote {
+  font-family: "minion-pro";
   font-size: 1.618034em;
   max-width: 25em;
   line-height: 1.4640638864em;
@@ -652,14 +659,28 @@ p {
       margin-bottom: 0em; } }
   @media (min-width: 1024px) {
     .endorsement, .pull-quote {
-      line-height: 1.4837819186em;
+      line-height: 1.5139751553em;
       margin-top: 0em; } }
 
+@media (min-width: 1024px) {
+  .endorsement {
+    margin-top: 0.5046583851em; } }
+
 a {
+  color: #7d85c0;
   text-decoration: none; }
 
 #logo, #logo > img {
   width: 100%; }
+
+@media (min-width: 768px) {
+  #header {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #EEE;
+    min-height: 20px; } }
 
 #info {
   background-color: #EEE;
@@ -680,6 +701,7 @@ a {
       text-align: center;
       width: 100%; }
   #info nav a {
+    color: #7d85c0;
     padding: 0em; }
   @media (min-width: 768px) {
     #info {
@@ -722,6 +744,9 @@ a {
             line-height: 1.397515528em;
             text-align: left; } }
 
+article {
+  margin-bottom: 0em; }
+
 @media (min-width: 768px) {
   #content {
     width: 60.3776401224%;
@@ -736,5 +761,17 @@ a {
 
 aside {
   display: none; }
+  @media (min-width: 1024px) {
+    aside {
+      display: block; } }
+
+.pull-quote {
+  background-color: #EEE;
+  float: right;
+  margin-left: -40px;
+  padding-left: 0.5em;
+  position: relative;
+  right: -1.6em;
+  width: 70%; }
 
 /*# sourceMappingURL=style.css.map */
